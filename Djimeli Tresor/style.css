@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1,p{
+    margin: 40px 0 50px 0;
+}
+h1,p,h2, input[type=submit]{
+    text-align: center;
+}
+.active, a:hover{
+    background-color: #3bf0d597;
+}
+header{
+    margin-bottom: 70px;
+    padding: 50px 0;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: #222;
+    text-decoration: none;
+    padding: 12px 18px;
+}
+
+footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+footer form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    border: 1px transparent solid;
+    box-shadow: 0 0 7px rgba(0, 0, 0,0.3);
+}
+form h2{
+    padding: 20px 0;
+}
+form input{
+    height: 55px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: #d3d3d3 solid 1px;
+    outline: 0;
+}
+textarea{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+form input
+{
+    font-weight: 600;
+}
+form input::placeholder{
+    font-weight: 600;
+}
+input[type=submit]{
+    cursor: pointer;
+    transition: .2s ease all;
+}
+input[type=submit]:hover{
+    background-color: #3bf0d597;
+    border: 0;
+}
+input[type=submit]:active{
+    scale: 0.98;
+    background-color: #3bf0d597;
+    opacity: 80%;
+    border: 0;
+}
+form *{
+    transition: all 0.2s ease;
+}
+.redborder{
+    border: 1px rgba(255, 13, 13, 0.727) solid;
+    animation: bounce 0.3s ease;
+}
+@keyframes bounce {
+    0%{
+        transform: translateX(px);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+placeholder::placeholder{
+    color: rgba(255, 13, 13, 0.727);
+}
+
+@media screen and (max-width:680px) {
+    header nav ul{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    header nav ul li a{
+        padding: 6px 9px;
+        font-size: 0.94em;
+    }
+    h1,p{
+        margin: 40px 10px 50px 10px;
+    }
+}

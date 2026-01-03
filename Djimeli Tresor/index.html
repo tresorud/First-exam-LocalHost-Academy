@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my site</h1>
+        <p>
+            Hi, i'm John Doe a junior web developer aiming to wonder the world with some code. <br>
+            This site is to show out my cv, experience and profile 
+        </p>
+        <nav>
+            <ul>
+                <li><a href="./moncv.html" class="active">Acceuil</a></li>
+                <li><a href="./moncv.html">Mon cv</a></li>
+                <li><a href="./connectez-vous.html">Connectez-vous</a></li>
+                <li><a href="./inscrire.html">S'incrire</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br>
+
+    <footer>
+        <form id="contact">
+            <h2>Me contacter</h2>
+            <label >Adresse Email :</label>
+            <input type="text" id="email" placeholder="Adresse email">
+            <label >Nom :</label>
+            <input type="text" placeholder="Nom" id="name">
+            <label >Message :</label>
+            <textarea cols="20" id="msg" rows="3"></textarea>
+            <input type="submit" value="Envoyer" onclick="verf()" id="valid">
+        </form>
+        <p class="copyright">copyright my site - 23/12/2022</p>
+    </footer>
+    <script src="./contact.js"></script>
+</body>
+</html>
