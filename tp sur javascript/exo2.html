@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyenne</title>
+</head>
+<body>
+    <form action="" id="forms">
+        <input type="text" placeholder="note1" id="note1"><br>
+        <input type="text" placeholder="note2" id="note2"><br>
+        <input type="text" placeholder="note3" id="note3"><br>
+        <input type="text" placeholder="ici s'affichera le résultat" id="resultat" readonly><br>
+        <input type="submit" value="Envoyer"  id="send" >
+    </form>
+
+    <script>
+        var note1 = document.getElementById("note1");
+        var note2 = document.getElementById("note2");
+        var note3 = document.getElementById("note3");
+        var resultat = document.getElementById("resultat");
+        function Moy(){
+            resultat.value = (parseFloat(note1.value)+parseFloat(note2.value)+parseFloat(note3.value))/3;
+        }
+        document.getElementById("send").addEventListener(("click"),(e)=>{
+            e.preventDefault();
+            Moy();
+        })
+    </script>
+</body>
+</html>

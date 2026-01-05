@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-JS</title>
+</head>
+<body>
+    <h1>Exercice 1</h1>
+     
+    <img src="./black-myth-wukong-7680x3870-18204-Photoroom.png" alt="wukong" width="500px">
+
+    <p>
+        Nombre de clics : <span id="compteur">0</span>
+    </p>
+    <script>
+        var compteur = 0;
+        var message = document.getElementById("compteur");
+        var image = document.getElementsByTagName("img");
+        image[0].addEventListener(("click"),()=>{
+            message.textContent = compteur++;
+        });
+
+    </script>
+</body>
+</html>
